@@ -18,7 +18,7 @@ const Orders = () => {
 
   const fetchOrders = async () => {
     try {
-      const { data } = await axios.get('http://localhost:3000/api/v1/order/get-user-orders', {
+      const { data } = await axios.get('http://192.168.49.2:31000/api/v1/order/get-user-orders', {
         headers: {
           Authorization: auth?.token
         }

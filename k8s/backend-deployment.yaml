@@ -15,8 +15,11 @@ spec:
       containers:
         - name: backend
           image: node-backend:latest
+          imagePullPolicy: Never
           ports:
             - containerPort: 3000
           env:
-            - name: MONGO_URL
-              value: mongodb://mongo:27017/your-db-name
+            - name: MONGO_URI
+              value: mongodb+srv://rumerjaved7:nZlh8VxWpiANvjh5@cluster0.dqasiyv.mongodb.net/ShopSphere?retryWrites=true&w=majority
+            - name: PORT
+              value: "3000"

@@ -15,5 +15,9 @@ spec:
       containers:
         - name: web
           image: vite-app:latest
+          imagePullPolicy: Never
           ports:
             - containerPort: 5000
+          env:
+            - name: PORT
+              value: "5000"

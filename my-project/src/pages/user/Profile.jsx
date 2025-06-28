@@ -22,7 +22,7 @@ const Profile = () => {
     setError(null);
     setSuccess(null);
     try {
-      const { data } = await axios.put('http://localhost:3000/api/v1/auth/profile', { name, email, password, phone, address });
+      const { data } = await axios.put('http://192.168.49.2:31000/api/v1/auth/profile', { name, email, password, phone, address });
       if (data?.error) {
         toast.error(data.error)
       }

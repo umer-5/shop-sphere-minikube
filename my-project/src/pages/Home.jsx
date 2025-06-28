@@ -54,7 +54,7 @@ const Home = () => {
 
   const getAllProducts = async () => {
     try {
-      const { data } = await axios.get('http://localhost:3000/api/v1/product/get-product');
+      const { data } = await axios.get('http://192.168.49.2:31000/api/v1/product/get-product');
       if (data?.success) {
         setProducts(data.products.slice(0, 6));
       }
@@ -65,7 +65,7 @@ const Home = () => {
 
   const getAllCategories = async () => {
     try {
-      const { data } = await axios.get('http://localhost:3000/api/v1/category/get-category');
+      const { data } = await axios.get('http://192.168.49.2:31000/api/v1/category/get-category');
       if (data?.success) {
         setCategories(data.categories);
       }

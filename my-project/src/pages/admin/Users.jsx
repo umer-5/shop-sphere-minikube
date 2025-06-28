@@ -15,7 +15,7 @@ const Users = () => {
   const getAllUsers = async () => {
     try {
       setLoading(true);
-      const { data } = await axios.get('http://localhost:3000/api/v1/auth/total-users');
+      const { data } = await axios.get('http://192.168.49.2:31000/api/v1/auth/total-users');
       console.log(data);
       if (data?.success) {
         setUsers(data?.total);

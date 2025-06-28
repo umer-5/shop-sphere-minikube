@@ -66,7 +66,7 @@ const ProductForm = ({ handleSubmit, categories, initialValues = {} }) => {
                             <div>
                                 <img 
                                 alt=""
-                                src={`http://localhost:3000/api/v1/product/product-photo/${initialValues._id}`}
+                                src={`http://192.168.49.2:31000/api/v1/product/product-photo/${initialValues._id}`}
                                 width="100"
                                 height="100"
                                 />

@@ -7,7 +7,7 @@ const useCategory = () => {
 
     const getCategories = async () =>{
         try {
-        const {data} = await axios.get("http://localhost:3000/api/v1/category/get-category") 
+        const {data} = await axios.get("http://192.168.49.2:31000/api/v1/category/get-category") 
         setCategories(data?.categories)
         } catch (error) {
             console.log(error)

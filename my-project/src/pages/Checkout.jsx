@@ -34,7 +34,7 @@ const Checkout = () => {
             }
 
             const { data } = await axios.post(
-                'http://localhost:3000/api/v1/order/create-order',
+                'http://192.168.49.2:31000/api/v1/order/create-order',
                 orderData
             )
 

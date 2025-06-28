@@ -24,3 +24,4 @@ ENV PORT=5000
 EXPOSE 5000
 
 CMD ["serve", "-s", "dist", "-l", "5000"]
+

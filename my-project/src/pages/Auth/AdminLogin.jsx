@@ -18,7 +18,7 @@ const AdminLogin = () => {
         setError(null);
         setSuccess(null);
         try {
-            const res = await axios.post('http://localhost:3000/api/v1/auth/admin', { name, password });
+            const res = await axios.post('http://192.168.49.2:31000/api/v1/auth/admin', { name, password });
             if (res.data.success) {
                 setSuccess("Login successful! Redirecting to admin dashboard...");
                 localStorage.setItem('adminToken', res.data.token);

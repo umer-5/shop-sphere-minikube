@@ -53,7 +53,7 @@ const CategoryForm = ({ handleSubmit, initialValues = {} }) => {
                             ) : initialValues._id ? (
                                 <div>
                                     <img 
-                                        src={`http://localhost:3000/api/v1/category/category-photo/${initialValues._id}`}
+                                        src={`http://192.168.49.2:31000/api/v1/category/category-photo/${initialValues._id}`}
                                         alt="Current category"
                                         width="100"
                                         height="100"
